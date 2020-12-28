@@ -1,7 +1,6 @@
 /* Home Page */
 body.home {
   padding: 10px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url('https://i.imgur.com/RJMpp0X.png');
   background-position: center;
   background-attachment: fixed;
@@ -10,6 +9,7 @@ body.home {
   color: #8c52ff;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
+ 
 
 }
 div
@@ -46,6 +46,7 @@ img.gallery{
   margin-right: auto;
   width: 50%;
   height: 220px;
+  position: static;
 
 }
 #gallery{
@@ -97,5 +98,6 @@ img.contact{
   margin-right: auto;
   width: 50%;
   height: 220px;
+  position: sticky;
 
 }
