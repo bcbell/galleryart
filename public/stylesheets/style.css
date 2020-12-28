@@ -1,0 +1,101 @@
+/* Home Page */
+body.home {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('https://i.imgur.com/RJMpp0X.png');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  color: #8c52ff;
+  font-family: 'Arima Madurai', cursive;
+  font-variant-caps: small-caps ;
+
+}
+div
+/* Navigation */
+header{
+  position: sticky;
+}
+a.nav-link{
+  color: #8c52ff;
+  background: #ffde59;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+nav a {
+  color: #8c52ff;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #8c52ff;
+  background: #ffde59 ;
+}
+/* Gallery Page */
+body.gallery{
+  padding: 10px;
+  font-family: 'Arima Madurai', cursive;
+  font-variant-caps: small-caps ;
+  background-color: #5ce1e6;
+}
+img.gallery{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 220px;
+
+}
+#gallery{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+/* Bio Page */
+body.bio{
+  padding: 10px;
+  background-color: #5ce1e6;
+  font-family: 'Arima Madurai', cursive;
+  font-variant-caps: small-caps ;
+  
+}
+div.bio{
+  margin: 40px;
+  font-size: 25px;
+  border: #8c52ff 2px solid;
+  padding: 60px;
+}
+p.biog{
+  text-align: right;
+}
+img.bio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 220px;
+
+}
+/* Contact Page */
+body.contact{
+  padding: 10px;
+  background-color: #5ce1e6;
+  font-family: 'Arima Madurai', cursive;
+  font-variant-caps: small-caps ;
+}
+#contact{
+  margin-top: 15px;
+}
+h1.contact{
+  margin-top: 15px;
+  text-align: center;
+}
+img.contact{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 220px;
+
+}
