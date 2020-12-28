@@ -1,0 +1,17 @@
+<%-include('../partials/header')%>
+
+<body class="cart">
+
+    <script src="simpleCart.js"></script>
+    <script>
+        simpleCart({
+        checkout: { 
+            type: "PayPal" , 
+            email: "brittany.coleman.softeng@gmail.com" 
+        },
+        tax: 		0.075,
+        currency: 	"USD"
+     });
+    </script>
+    
+</body>
