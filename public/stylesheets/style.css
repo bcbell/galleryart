@@ -44,7 +44,7 @@ body.gallery{
 section{
   padding: 10px;
 }
-/* img.gallery{
+img.gallery{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -52,7 +52,7 @@ section{
   height: 220px;
   position: static;
 
-} */
+}
 #gallery{
   margin-top: 10px;
   margin-left: 50px;
