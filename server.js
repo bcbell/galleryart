@@ -29,17 +29,17 @@ app.post('/create-checkout-session', async (req, res) => {
         price_data: {
           currency: 'usd',
           product_data: {
-            name: 'Stubborn Attachments',
-            images: ['https://i.imgur.com/EHyR2nP.png'],
+            name: '',
+            images: [''],
           },
-          unit_amount: 2000,
+          unit_amount: '',
         },
-        quantity: 1,
+        quantity: '',
       },
     ],
     mode: 'payment',
-    success_url: `https://sarainc.herokuapp.com/success`,
-    cancel_url: `https://sarainc.herokuapp.com/cancel`,
+    success_url: `https://thehappycrafter.herokuapp.com/success`,
+    cancel_url: `https://thehappycrafter.herokuapp.com/cancel`,
   });
   res.json({ id: session.id });
 });
