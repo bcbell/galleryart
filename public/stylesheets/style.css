@@ -1,14 +1,16 @@
 /* Home Page */
 body.home {
   padding: 10px;
-  background-image: url('https://i.imgur.com/RJMpp0X.png');
+  background-image: url('https://i.imgur.com/ftVbfaN.png');
   background-position: center;
   background-attachment: fixed;
   background-size: 50% 50%;
   z-index: -100;
-  background-color: #8c52ff;
+  /* background-color: #355e3b; */
+  background-color: #b784a7;
   background-repeat: no-repeat; 
-  color: #ffde59;
+  /* color: #b784a7; */
+  color: #355e3b ;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
 }
@@ -17,10 +19,10 @@ body.home {
 #navbar{
   font-size: 20px;
   font-weight: bold;
-  color: #ffde59;
+  color: #9b870c;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: #5ce1e6;
+  color: #355e3b ;
   font-size: 30px;
   padding-left: 100px;
 }
@@ -29,7 +31,7 @@ body.home {
 body.gallery{
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
-  background-color: #8c52ff;
+  background-color: #b784a7;
 }
 
 #gallery{
@@ -43,16 +45,16 @@ body.gallery{
 /* Bio Page */
 body.bio{
   padding: 10px;
-  background-color: #8c52ff;
+  background-color: #b784a7;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
-  color: #5ce1e6;
+  color: #355e3b ;
 }
 div.bio{
   margin: 40px;
   font-size: 25px;
-  border: 2px #ffde59 solid;
-  padding: 60px;
+  border: 2px#f7ba61 solid;
+  padding: 20px;
 }
 p.biog{
   text-align: right;
@@ -68,9 +70,9 @@ img.bio{
 /* Contact Page */
 body.contact{
   padding: 10px;
-  color: #ffde59;
+  color: #f7ba61;
   font-size: 20px;
-  background-color: #8c52ff;
+  background-color: #b784a7;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
 }
@@ -90,7 +92,7 @@ img.contact{
 
 }
 .btn {
-  background-color: #5ce1e6;
+  background-color: #355e3b ;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -107,40 +109,39 @@ img.contact{
 
 /* Footer */
 footer{
-  padding-top: 30px;
-  margin-top: -100px;
-  position: fixed;
+  padding-top: 70px;
+  position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
   text-align: center;
-  color: #ffde59;
+  color: #f7ba61;
 }
 div.social{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-  
+  padding-top: 20px;
+  margin-top: 50px;
+
 }
 #social{
   margin-left: 15px;
   margin-bottom: 10px;
-  margin-top: 10px;
+ 
 }
 div.hyperlinks{
   display: flex;
   justify-content: space-evenly;
   border-top: 3px white solid;
 }
-
 a{
-  color: #5ce1e6;
+  color:#f7ba61;
 }
 /* Cancel Page */
 body.cancel{
   padding: 10px;
-  color: #ffde59;
+  color: #f7ba61;
   font-size: 20px;
   background-color: #8c52ff;
   font-family: 'Arima Madurai', cursive;

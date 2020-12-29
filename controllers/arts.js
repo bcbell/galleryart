@@ -7,6 +7,6 @@ module.exports={
 function index(req, res){
     Art.find({})
     .then((arts)=>{
-        res.render('artist/arts',{ title: 'The Uri Collection by Sarai Coleman', arts})
+        res.render('artist/arts',{ title: 'The Happy Crafter by Sarai Coleman', arts})
     })
 }
