@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const methodOverride= require('method-override')
+const stripe = require('stripe')('sk_test_51I3WVwKUWk9p77CmxmcphtVtpaXSSk73Di2ESiWb7PWELhhUill2jbnmsL3TK7CbZO7KEVkFUq16uSizoMyiNp1h00iugAXnm7');
+
 
 require('dotenv').config();
 require('./config/database');
@@ -11,12 +13,37 @@ require('./config/database');
 var homeRouter = require('./routes/home');
 var galleryRouter = require('./routes/gallery');
 const bioRouter = require('./routes/bio');
-const contactRouter = require('./routes/contact')
-const cartRouter = require('./routes/cart')
+const contactRouter = require('./routes/contact');
+const cartRouter = require('./routes/cart');
+const successRouter =require('./routes/success');
+const cancelRouter = require('./routes/cancel')
 
 
 var app = express();
 
+app.post('/create-checkout-session', async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: [
+      {
+        price_data: {
+          currency: 'usd',
+          product_data: {
+            name: 'Stubborn Attachments',
+            images: ['https://i.imgur.com/EHyR2nP.png'],
+          },
+          unit_amount: 2000,
+        },
+        quantity: 1,
+      },
+    ],
+    mode: 'payment',
+    success_url: `http://localhost:4242/success`,
+    cancel_url: `http://localhost:4242/cancel`,
+  });
+  res.json({ id: session.id });
+});
+app.listen(4242, () => console.log('Running on port 4242'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,6 +61,8 @@ app.use('/gallery', galleryRouter);
 app.use('/bio', bioRouter);
 app.use('/contact', contactRouter);
 app.use('/shoppingcart', cartRouter);
+app.use('/success', successRouter);
+app.use('/cancel', cancelRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
