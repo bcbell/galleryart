@@ -47,8 +47,6 @@ body.bio{
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
   color: #5ce1e6;
-
-  
 }
 div.bio{
   margin: 40px;
@@ -138,6 +136,24 @@ div.hyperlinks{
 
 a{
   color: #5ce1e6;
+}
+/* Cancel Page */
+body.cancel{
+  padding: 10px;
+  color: #ffde59;
+  font-size: 20px;
+  background-color: #8c52ff;
+  font-family: 'Arima Madurai', cursive;
+  font-variant-caps: small-caps ;
+}
+/* Success Page */
+body.success{
+  padding: 10px;
+  color: #ffde59;
+  font-size: 20px;
+  background-color: #8c52ff;
+  font-family: 'Arima Madurai', cursive;
+  font-variant-caps: small-caps ;
 }
 @media screen and (max-width: 800px) {
   body{
