@@ -4,72 +4,55 @@ body.home {
   background-image: url('https://i.imgur.com/RJMpp0X.png');
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 50% 50%;
+  z-index: -100;
+  background-color: #8c52ff;
   background-repeat: no-repeat; 
-  color: #8c52ff;
+  color: #ffde59;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
- 
+}
 
-}
-div
 /* Navigation */
-header{
-  position: sticky;
-}
-a.nav-link{
-  color: #8c52ff;
-  background: #ffde59;
-  margin-left: 10px;
-  margin-right: 10px;
+#navbar{
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
+  color: #ffde59;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #5ce1e6;
+  font-size: 30px;
+  padding-left: 100px;
 }
 
-nav a {
-  color: #8c52ff;
-}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  color: #8c52ff;
-  background: #ffde59 ;
-}
 /* Gallery Page */
 body.gallery{
-  padding: 10px;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
-  background-color: #5ce1e6;
+  background-color: #8c52ff;
 }
-section{
-  padding: 10px;
-}
-img.gallery{
+
+#gallery{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   height: 220px;
-  position: static;
-
-}
-#gallery{
-  margin-top: 10px;
-  margin-left: 50px;
-}
+} 
 
 /* Bio Page */
 body.bio{
   padding: 10px;
-  background-color: #5ce1e6;
+  background-color: #8c52ff;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
+  color: #5ce1e6;
   
 }
 div.bio{
   margin: 40px;
   font-size: 25px;
-  border: #8c52ff 2px solid;
+  border: 2px #ffde59 solid;
   padding: 60px;
 }
 p.biog{
@@ -86,7 +69,9 @@ img.bio{
 /* Contact Page */
 body.contact{
   padding: 10px;
-  background-color: #5ce1e6;
+  color: #ffde59;
+  font-size: 20px;
+  background-color: #8c52ff;
   font-family: 'Arima Madurai', cursive;
   font-variant-caps: small-caps ;
 }
@@ -104,6 +89,21 @@ img.contact{
   height: 220px;
   position: sticky;
 
+}
+.btn {
+  background-color: #5ce1e6;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.btn:hover {
+  background-color: #ffde59
 }
 /* Shopping Cart */
 body.cart{
@@ -175,7 +175,7 @@ label {
 }
 
 .btn {
-  background-color: #8c52ff;
+  background-color: #5ce1e6;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -202,11 +202,18 @@ span.price {
   color: grey;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
+  body{
+    display: block;
+    block-size: auto;
+   
+  }  
+
   .row {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .col-25 {
     margin-bottom: 20px;
   }
 }
+
