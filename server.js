@@ -29,12 +29,12 @@ app.post('/create-checkout-session', async (req, res) => {
         price_data: {
           currency: 'usd',
           product_data: {
-            name: '',
-            images: [''],
+            name: 'Stubborn Attachments', 
+            images: ['https://i.imgur.com/EHyR2nP.png'],
           },
-          unit_amount: '',
+          unit_amount: 2000,
         },
-        quantity: '',
+        quantity: 1,
       },
     ],
     mode: 'payment',
@@ -44,6 +44,8 @@ app.post('/create-checkout-session', async (req, res) => {
   res.json({ id: session.id });
 });
 app.listen(4242, () => console.log('Running on port 4242'))
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
