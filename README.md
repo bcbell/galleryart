@@ -1,4 +1,6 @@
-# galleryart
+# The Happy Crafter 
+
+To demo, https://thehappycrafter.herokuapp.com/
 
 __API__
 - Stripe
@@ -16,3 +18,4 @@ __Technologies Used__
 - Google Fonts
 - Imgur
 - Canva
+- Favicon
