@@ -38,8 +38,8 @@ app.post('/create-checkout-session', async (req, res) => {
       },
     ],
     mode: 'payment',
-    success_url: `http://localhost:4242/success`,
-    cancel_url: `http://localhost:4242/cancel`,
+    success_url: `https://sarainc.herokuapp.com/success`,
+    cancel_url: `https://sarainc.herokuapp.com/cancel`,
   });
   res.json({ id: session.id });
 });
